@@ -55,6 +55,8 @@ Finally: 23 bits
 003 - MOV
 
 004 - JMP
+
+005 - JZ
 ```
 
 **Ram mapping**
