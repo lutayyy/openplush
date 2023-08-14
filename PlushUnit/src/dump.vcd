@@ -1,0 +1,171 @@
+$date
+	Mon Aug 14 20:43:12 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module cpu $end
+$var wire 8 ! data_addr [7:0] $end
+$var wire 8 " instr_addr [7:0] $end
+$var wire 8 # ram_addr [7:0] $end
+$var wire 1 $ ram_write $end
+$var wire 5 % reg_addr [4:0] $end
+$var wire 1 & reg_write $end
+$var wire 1 ' zF $end
+$var wire 32 ( reg_out [31:0] $end
+$var wire 32 ) reg_in [31:0] $end
+$var wire 32 * ram_out [31:0] $end
+$var wire 32 + ram_in [31:0] $end
+$var wire 32 , instr_out [31:0] $end
+$var wire 32 - data_out [31:0] $end
+$var wire 32 . alu_res [31:0] $end
+$var wire 3 / alu_op [2:0] $end
+$var wire 32 0 alu_b [31:0] $end
+$var wire 32 1 alu_a [31:0] $end
+$var reg 1 2 clk $end
+$var reg 1 3 rst $end
+$scope module alu $end
+$var wire 1 ' zF $end
+$var wire 3 4 op [2:0] $end
+$var wire 32 5 b [31:0] $end
+$var wire 32 6 a [31:0] $end
+$var parameter 3 7 ADD $end
+$var parameter 3 8 NOP $end
+$var parameter 3 9 SUB $end
+$var reg 32 : res [31:0] $end
+$upscope $end
+$scope module control $end
+$var wire 32 ; alu_res [31:0] $end
+$var wire 1 2 clk $end
+$var wire 32 < regf_in [31:0] $end
+$var wire 32 = ram_in [31:0] $end
+$var wire 32 > instr [31:0] $end
+$var wire 32 ? data [31:0] $end
+$var parameter 3 @ ADD $end
+$var parameter 3 A JMP $end
+$var parameter 3 B MOV $end
+$var parameter 3 C NOP $end
+$var parameter 3 D SUB $end
+$var parameter 2 E m $end
+$var parameter 2 F n $end
+$var parameter 2 G r $end
+$var parameter 8 H ram_tmp $end
+$var parameter 5 I reg_tmp $end
+$var reg 32 J alu_a [31:0] $end
+$var reg 32 K alu_b [31:0] $end
+$var reg 3 L alu_op [2:0] $end
+$var reg 8 M ram_addr [7:0] $end
+$var reg 32 N ram_out [31:0] $end
+$var reg 1 O ram_write $end
+$var reg 5 P regf_addr [4:0] $end
+$var reg 32 Q regf_out [31:0] $end
+$var reg 1 R regf_write $end
+$upscope $end
+$scope module flash_data $end
+$var wire 8 S addr [7:0] $end
+$var wire 32 T in [31:0] $end
+$var wire 1 U write $end
+$var wire 32 V out [31:0] $end
+$upscope $end
+$scope module flash_instr $end
+$var wire 8 W addr [7:0] $end
+$var wire 32 X in [31:0] $end
+$var wire 1 Y write $end
+$var wire 32 Z out [31:0] $end
+$upscope $end
+$scope module ram $end
+$var wire 8 [ addr [7:0] $end
+$var wire 32 \ in [31:0] $end
+$var wire 1 $ write $end
+$var wire 32 ] out [31:0] $end
+$upscope $end
+$scope module reg_file $end
+$var wire 5 ^ addr [4:0] $end
+$var wire 1 2 clk $end
+$var wire 32 _ in [31:0] $end
+$var wire 1 3 rst $end
+$var wire 1 & write $end
+$var reg 32 ` out [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b0 I
+b0 H
+b11 G
+b10 F
+b0 E
+b10 D
+b0 C
+b11 B
+b100 A
+b1 @
+b10 9
+b0 8
+b1 7
+$end
+#0
+$dumpvars
+bx `
+bx _
+bx ^
+bx ]
+bx \
+bx [
+b0 Z
+zY
+bz X
+b0 W
+b0 V
+zU
+bz T
+b0 S
+xR
+bx Q
+bx P
+xO
+bx N
+bx M
+bx L
+bx K
+bx J
+b0 ?
+b0 >
+bx =
+bx <
+bx ;
+bx :
+bx 6
+bx 5
+bx 4
+13
+02
+bx 1
+bx 0
+bx /
+bx .
+b0 -
+b0 ,
+bx +
+bx *
+bx )
+bx (
+x'
+x&
+bx %
+x$
+bx #
+b0 "
+b0 !
+$end
+#1
+b0 /
+b0 4
+b0 L
+12
+#2
+02
