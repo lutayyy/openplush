@@ -7,27 +7,6 @@
 Этот проект позиционирует себя как универсальная платформа для некоторого количества плат разработки на основе микроконтроллеров, который можно собрать в обычный исполняемый файл с помощью Verilator.
 # ISA v0.3
 
-**An Instruction**
-
-`mov r1 [00000001]`
-  
-**In binary**
-
-`00311000010000000000001`
-
-**Translation**
-```
-003 - Opcode
-
-11 - Memory register
-
-00001000 - Register address
-
-00 - Memory register
-
-00000001 - Ram address
-```
-
 **Memory register**
 
 - `11` - An address is a register address
@@ -85,3 +64,26 @@ Finally: 23 bits
 ***Do not write any info to ram[0] it will be freed!***
 
 `32 <-> 4096` - Free
+
+## Example
+
+**An Instruction**
+
+`mov r1 [00000001]`
+  
+**In binary**
+
+`00311000010000000000001`
+
+**Translation**
+```
+003 - Opcode
+
+11 - Memory register
+
+00001000 - Register address
+
+00 - Memory register
+
+00000001 - Ram address
+```
