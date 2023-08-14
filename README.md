@@ -9,12 +9,20 @@
 **An Instruction**
 
 - *mov r1 [00000001]*
+  
+**In binary:**
+
+- *00311000010000000000001*
 
 mov -> 003 - Opcode
 
-r1 -> 11 - Memory register; 00001000 - Register address
+r1 -> 11 - Memory register
 
-[00000001] -> 00 - Memory register; 00000001 - Ram address
+00001000 - Register address
+
+[00000001] -> 00 - Memory register
+
+00000001 - Ram address
 
 
 **Memory register**
