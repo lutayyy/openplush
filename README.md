@@ -32,7 +32,7 @@
 
 (`15 16 17 18 19` - Register addres)
 
-Finally: 23 bits
+Finally: *23* bits
 
 
 **Registers mapping**
