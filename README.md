@@ -14,7 +14,7 @@ mov -> 003 - Opcode
 
 r1 -> 11 - Memory register; 00001000 - Register address
 
-[00000001] -> 00 - Remory register; 00000001 - Ram address
+[00000001] -> 00 - Memory register; 00000001 - Ram address
 
 
 **Memory register**
