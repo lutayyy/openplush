@@ -32,7 +32,7 @@
 - `10` - It is not an address, it is a number
 
 
-**Instruction bits**
+**Instruction bits(Little Endian)**
 
 `0 1 2` - Opcode
 
@@ -40,16 +40,25 @@
 
 `5 6 7 8 9 10 11 12` - Address
 
-(`5 6 7 8 9` - Register address)
-
 `13 14` - Memory register
 
 `15 16 17 18 19 20 21 22` - Address
 
-(`15 16 17 18 19` - Register addres)
+`23 24 25 26 27 28 29 30 31` - Free
 
-Finally: *23* bits
+**Instruction bits(Big Endian)**
 
+`31 30 29` - Opcode
+
+`28 27` - Memory register
+
+`26 25 24 23 22 21 20 19` - Address
+
+`18 17` - Memory register
+
+`16 15 14 13 12 11 10 9` - Address
+
+`8 7 6 5 4 3 2 1 0` - Free
 
 **Registers mapping**
 
